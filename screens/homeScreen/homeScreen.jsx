@@ -27,14 +27,14 @@ const HomeScreen = () => {
 
   const handleSearch = async () => {
     if (authorName.trim() !== '') {
+      setAuthorCompleteName(authorName);
       dispatch(addLastSearch(authorName));
     }
-    setAuthorCompleteName(authorName);
   };
 
   const handleRecentSearch = search => {
-    // Perform a new search when a recent search is selected
     setAuthorName(search.text);
+    setAuthorCompleteName(search.text);
     dispatch(addLastSearch(search.text));
   };
 

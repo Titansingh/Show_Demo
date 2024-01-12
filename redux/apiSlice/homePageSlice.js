@@ -15,8 +15,8 @@ export const homePageSlice = createSlice({
       };
       state.lastSearches.push(lastSearch);
 
-      if (state.lastSearches.length > 3) {
-        state.lastSearches.splice(0, state.lastSearches.length - 3);
+      if (state.lastSearches.length > 4) {
+        state.lastSearches.splice(0, 1);
       }
     },
     removeLastSearch: (state, action) => {
