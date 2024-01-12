@@ -2,8 +2,6 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const BookCard = ({props}) => {
-  // Default values in case props are missing
-
   return (
     <View style={styles.cardContainer}>
       <View style={styles.textContainer}>
