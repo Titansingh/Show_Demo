@@ -1,16 +1,19 @@
-import { Text, View } from 'react-native'
 
+
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react'
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
-import HomeScreen from './screens/homeScreen/homeScreen';
+import BottomTabNavigator from './navigation/bottomNav';
 
 function App() {
 
   return (
     <Provider store={store}>
 
-      <HomeScreen />
+      <NavigationContainer>
+        <BottomTabNavigator />
+      </NavigationContainer>
 
     </Provider>
   )

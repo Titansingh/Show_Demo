@@ -1,7 +1,7 @@
 import {createSlice, nanoid} from '@reduxjs/toolkit';
 
 const initialState = {
-  lastSearches: [{id: 1, text: 'Bill Gates'}],
+  lastSearches: [{id: 1, text: 'All That'}],
 };
 
 export const homePageSlice = createSlice({
